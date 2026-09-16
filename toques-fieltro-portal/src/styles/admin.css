@@ -1,0 +1,132 @@
+
+.admin-pagina {
+  min-height: 100vh;
+  padding: 75px 7%;
+  background: #fff8fb;
+  color: #4b3540;
+}
+
+.admin-encabezado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 55px;
+}
+
+.admin-etiqueta {
+  color: #ad5680;
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.admin-encabezado h1 {
+  margin: 18px 0 12px;
+  color: #4f354d;
+  font-size: clamp(2.4rem, 5vw, 3.5rem);
+  line-height: 1.1;
+}
+
+.admin-encabezado p {
+  margin: 0;
+  color: #806875;
+  font-size: 1.1rem;
+}
+
+.admin-volver {
+  padding: 15px 27px;
+  border: 1px solid #d789ad;
+  border-radius: 14px;
+  color: #ad5680;
+  background: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: 0.25s ease;
+}
+
+.admin-volver:hover {
+  background: #fce5ef;
+  transform: translateY(-2px);
+}
+
+.admin-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+}
+
+.admin-card {
+  display: block;
+  padding: 35px;
+  border: 1px solid #f0d5e2;
+  border-radius: 24px;
+  background: #ffffff;
+  box-shadow: 0 10px 28px rgba(156, 82, 118, 0.07);
+  color: inherit;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.admin-card:hover {
+  border-color: #d789ad;
+  box-shadow: 0 15px 35px rgba(156, 82, 118, 0.14);
+  transform: translateY(-5px);
+}
+
+.admin-icono {
+  display: block;
+  margin-bottom: 22px;
+  font-size: 2.4rem;
+}
+
+.admin-card h2 {
+  margin: 0 0 12px;
+  color: #4f354d;
+  font-size: 1.5rem;
+}
+
+.admin-card p {
+  min-height: 52px;
+  margin: 0 0 25px;
+  color: #806875;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.admin-enlace {
+  color: #b45b84;
+  font-weight: 800;
+}
+
+@media (max-width: 750px) {
+  .admin-pagina {
+    padding: 45px 6%;
+  }
+
+  .admin-encabezado {
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 35px;
+  }
+
+  .admin-volver {
+    white-space: normal;
+  }
+
+  .admin-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  .admin-card {
+    padding: 26px;
+  }
+
+  .admin-encabezado h1 {
+    font-size: 2.3rem;
+  }
+}

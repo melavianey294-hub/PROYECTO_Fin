@@ -1,0 +1,184 @@
+
+.inicio {
+  min-height: 100vh;
+  background: #fff8fb;
+  color: #4b3540;
+}
+
+.inicio-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 45px;
+  padding: 70px 7%;
+  background: linear-gradient(135deg, #fff8fb, #fce5ef);
+}
+
+.inicio-contenido {
+  max-width: 600px;
+}
+
+.inicio-etiqueta {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 9px 18px;
+  border-radius: 30px;
+  background: #f6cfe1;
+  color: #9c5276;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.inicio-contenido h1 {
+  margin: 0 0 20px;
+  color: #9c5276;
+  font-size: clamp(2.4rem, 5vw, 4.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.inicio-contenido h1 span {
+  display: block;
+  color: #704c5e;
+}
+
+.inicio-contenido p {
+  max-width: 560px;
+  color: #806875;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.inicio-botones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.boton-principal,
+.boton-secundario {
+  display: inline-block;
+  padding: 14px 24px;
+  border-radius: 28px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.25s ease;
+}
+
+.boton-principal {
+  background: #c8759b;
+  color: #ffffff;
+}
+
+.boton-principal:hover {
+  background: #a9587f;
+  transform: translateY(-3px);
+}
+
+.boton-secundario {
+  border: 1px solid #c8759b;
+  background: #ffffff;
+  color: #9c5276;
+}
+
+.boton-secundario:hover {
+  background: #fce5ef;
+  transform: translateY(-3px);
+}
+
+.inicio-imagen-contenedor {
+  overflow: hidden;
+  border: 8px solid #ffffff;
+  border-radius: 35px;
+  box-shadow: 0 15px 35px rgba(156, 82, 118, 0.18);
+}
+
+.inicio-imagen {
+  display: block;
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+}
+
+.inicio-beneficios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 55px 7%;
+  background: #ffffff;
+}
+
+.beneficio-card {
+  padding: 30px 25px;
+  border: 1px solid #f1dce6;
+  border-radius: 22px;
+  background: #fffafd;
+  text-align: center;
+}
+
+.beneficio-icono {
+  font-size: 2.2rem;
+}
+
+.beneficio-card h2 {
+  margin: 15px 0 10px;
+  color: #9c5276;
+  font-size: 1.25rem;
+}
+
+.beneficio-card p {
+  margin: 0;
+  color: #806875;
+  line-height: 1.6;
+}
+
+.inicio-final {
+  padding: 65px 7%;
+  background: #fce5ef;
+  text-align: center;
+}
+
+.inicio-final h2 {
+  margin-bottom: 12px;
+  color: #9c5276;
+  font-size: 2rem;
+}
+
+.inicio-final p {
+  max-width: 650px;
+  margin: 0 auto 25px;
+  color: #806875;
+  line-height: 1.7;
+}
+
+@media (max-width: 850px) {
+  .inicio-hero {
+    grid-template-columns: 1fr;
+    padding: 45px 6%;
+  }
+
+  .inicio-contenido {
+    max-width: none;
+    text-align: center;
+  }
+
+  .inicio-contenido p {
+    margin: 0 auto;
+  }
+
+  .inicio-botones {
+    justify-content: center;
+  }
+
+  .inicio-imagen {
+    height: 320px;
+  }
+
+  .inicio-beneficios {
+    grid-template-columns: 1fr;
+    padding: 40px 6%;
+  }
+}
